@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(149, 181, 209);
+}
+
+button {
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.titulo {
+    font-size: 28px;
+}
+
+.subtitulo {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.formulario input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formulario button {
+    background-color: #007BFF;
+    transition: all 0.1s;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+.tarefas {
+    list-style: none;
+    padding: 0;
+}
+
+.tarefa-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tarefa-item:nth-child(even) {
+    background-color: #f14747; /*cor para linhas pares*/
+}
+
+.tarefa-item:nth-child(odd) {
+    background-color: #fff; /*cor para linhas impares*/
+}
+
+.tarefa-item button {
+    background-color: #ff006a;
+    transition: all 0.1s;
+}
+
+.tarefa-item button:hover {
+    background-color: #ff006a;
+}
+
+#nao-existe {
+    color: gray;
+}
